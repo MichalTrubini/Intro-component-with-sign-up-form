@@ -174,7 +174,7 @@ body {
 }
 
 .introduction {
-  margin-bottom: 2.4rem;
+  margin-bottom: 6.4rem;
 }
 
 .introduction__heading {
@@ -186,28 +186,28 @@ body {
 }
 
 .introduction__paragraph {
-  margin-bottom: 6.4rem;
   line-height: 2.6rem;
   font-size: 1.6rem;
   font-weight: 500;
 }
 
-.introduction__offer {
+.contact__offer {
   background-color: #6055a5;
   -webkit-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
           box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
   padding: 1.8rem 6.6rem;
   border-radius: 1rem;
   letter-spacing: 0.27px;
+  margin-bottom: 2.4rem;
 }
 
-.introduction__paragraph-offer {
+.contact__paragraph {
   font-weight: 400;
   font-size: 1.5rem;
-  margin-bottom: 0;
+  line-height: 2.6rem;
 }
 
-.introduction__text--bold {
+.contact__text--bold {
   font-weight: 700;
 }
 
@@ -251,9 +251,11 @@ body {
   color: #ff7a7a;
   text-align: right;
   margin-top: -10px;
-  margin-bottom: 30px;
-  font-size: 1.3rem;
+  margin-bottom: 1.9rem;
+  font-size: 1.1rem;
+  line-height: 1.65rem;
   font-style: italic;
+  font-weight: 500;
 }
 
 .contact__TS {
@@ -292,11 +294,13 @@ input {
 input:focus {
   border: none;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 0 1px #6055a5;
-          box-shadow: 0 0 0 1px #6055a5;
-  outline: none;
+  outline: 1px solid #5E54A4;
   -webkit-transition: .1s;
   transition: .1s;
+}
+
+.input-error-outline {
+  outline: 2px solid #FF7979;
 }
 
 ::-webkit-input-placeholder {
@@ -323,6 +327,10 @@ input:focus {
   body {
     background: url(../images/bg-intro-desktop.png), -webkit-gradient(linear, left top, left bottom, from(#ff7a7a));
     background: url(../images/bg-intro-desktop.png), linear-gradient(#ff7a7a);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
   }
   .main {
     display: -webkit-box;
@@ -334,19 +342,44 @@ input:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 120rem;
-    height: 100vh;
+    max-width: 110rem;
+    padding: 0 3.2rem;
+    margin: auto;
   }
   .introduction {
     text-align: left;
-    width: 42%;
+    width: 45%;
   }
   .introduction__heading {
-    font-size: 4rem;
-    line-height: 1.2;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.52px;
+    margin-bottom: 3rem;
   }
   .contact {
-    width: 50%;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    padding: 0;
+    width: 110rem;
+  }
+  .introduction {
+    width: 52.5rem;
+  }
+  .contact {
+    width: 54rem;
+  }
+  .contact__form {
+    padding: 4rem;
+  }
+  input {
+    margin-bottom: 2rem;
+  }
+  button:hover {
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=style.css.map */
