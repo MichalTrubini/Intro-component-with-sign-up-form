@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <main class="main">
+
+    <section class="introduction">
+      
+      <h1 class="introduction__heading">
+        Learn to code by watching others
+      </h1>
+      <p class="introduction__text">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </section>
+    <section class="contact">
+      <div class="contact__offer">
+        <p class="contact__text">
+          <span class="contact__text--bold">Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+      </div>
+
+      <form novalidate action="" class="contact__form">
+        <div class="contact__item">
+          <input type="text" placeholder="First Name" id="first-name" required>
+          <img src="images/icon-error.svg" alt="error" class="contact__error" id="name-error-icon">
+          <p class="contact__error-text" id="name-error" aria-live="polite"></p>
+        </div>
+        <div class="contact__item">
+          <input type="text" placeholder="Last Name" id="surname" required>
+          <img src="images/icon-error.svg" alt="error" class="contact__error" id="surname-error-icon">
+          <p class="contact__error-text" id="surname-error" aria-live="polite"></p>
+        </div>
+        <div class="contact__item">
+          <input type="email" placeholder="Email Address" id="email" required>
+          <img src="images/icon-error.svg" alt="error" class="contact__error" id="email-error-icon">
+          <p class="contact__error-text" id="email-error" aria-live="polite"></p>
+        </div>
+        <div class="contact__item">
+          <input type="password" placeholder="Password" id="password" required>
+          <img src="images/icon-error.svg" alt="error" class="contact__error" id="password-error-icon">
+          <p class="contact__error-text" id="password-error" aria-live="polite"></p>
+        </div>
+        
+        <button class="contact__button">
+          Claim your free trial
+        </button>
+        <p class="contact__TS">
+          By clicking the button, you are agreeing to our <span class="contact__TS--accent">Terms and Services</span>
+        </p>
+      </form>
+    </section>
+  </main>
+  <script src="js/jQuery.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
