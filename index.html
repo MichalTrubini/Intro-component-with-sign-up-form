@@ -36,17 +36,17 @@
       </div>
       <form novalidate action="" class="contact__form">
         <div class="contact__item">
-          <input type="text" placeholder="First Name" id="first-name" required>
+          <input type="text" pattern="[A-Za-z]" placeholder="First Name" id="first-name" required>
           <img src="images/icon-error.svg" alt="error" class="contact__error" id="name-error-icon">
           <p class="contact__error-text" id="name-error" aria-live="polite"></p>
         </div>
         <div class="contact__item">
-          <input type="text" placeholder="Last Name" id="surname" required>
+          <input type="text" pattern="[A-Za-z]" placeholder="Last Name" id="surname" required>
           <img src="images/icon-error.svg" alt="error" class="contact__error" id="surname-error-icon">
           <p class="contact__error-text" id="surname-error" aria-live="polite"></p>
         </div>
         <div class="contact__item">
-          <input type="email" placeholder="Email Address" id="email" required>
+          <input type="email" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" placeholder="Email Address" id="email" required>
           <img src="images/icon-error.svg" alt="error" class="contact__error" id="email-error-icon">
           <p class="contact__error-text" id="email-error" aria-live="polite"></p>
         </div>
