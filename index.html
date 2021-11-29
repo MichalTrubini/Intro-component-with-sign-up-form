@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -23,18 +23,17 @@
       <h1 class="introduction__heading">
         Learn to code by watching others
       </h1>
-      <p class="introduction__text">
+      <p class="introduction__paragraph">
         See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
         but understanding how developers think is invaluable. 
       </p>
-    </section>
-    <section class="contact">
-      <div class="contact__offer">
-        <p class="contact__text">
-          <span class="contact__text--bold">Try it free 7 days</span> then $20/mo. thereafter
+      <div class="introduction__offer">
+        <p class="introduction__paragraph introduction__paragraph-offer">
+          <span class="introduction__text--bold">Try it free 7 days</span> then $20/mo. thereafter
         </p>
       </div>
-
+    </section>
+    <div class="contact">
       <form novalidate action="" class="contact__form">
         <div class="contact__item">
           <input type="text" placeholder="First Name" id="first-name" required>
@@ -64,7 +63,7 @@
           By clicking the button, you are agreeing to our <span class="contact__TS--accent">Terms and Services</span>
         </p>
       </form>
-    </section>
+    </div>
   </main>
   <script src="js/jQuery.js"></script>
   <script src="js/script.js"></script>
