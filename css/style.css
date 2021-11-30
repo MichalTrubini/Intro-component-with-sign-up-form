@@ -220,6 +220,10 @@ body {
 }
 
 .contact__item {
+  margin-bottom: 1.6rem;
+}
+
+.contact__item {
   position: relative;
 }
 
@@ -240,22 +244,40 @@ body {
   margin-bottom: 0.8rem;
 }
 
-.contact__error {
+.contact__error-icon {
   position: absolute;
   right: 22px;
   top: 18px;
-  display: none;
+  -webkit-animation: opacity 0.5s;
+          animation: opacity 0.5s;
+  opacity: 0;
+}
+
+.contact__error-icon-visible {
+  -webkit-animation: opacity 0.3s;
+          animation: opacity 0.3s;
+  opacity: 1;
 }
 
 .contact__error-text {
   color: #ff7a7a;
   text-align: right;
-  margin-top: -10px;
-  margin-bottom: 1.9rem;
   font-size: 1.1rem;
-  line-height: 1.65rem;
+  line-height: 0;
   font-style: italic;
   font-weight: 500;
+  -webkit-transition: height 5s;
+  transition: height 5s;
+  height: 0;
+  overflow: hidden;
+}
+
+.contact__error-text-visible {
+  -webkit-transition: height 0.5s, margin-top 0.1s;
+  transition: height 0.5s, margin-top 0.1s;
+  line-height: 1.65rem;
+  margin-top: 0.6rem;
+  height: 16.5px;
 }
 
 .contact__TS {
@@ -271,21 +293,16 @@ body {
   font-weight: 700;
 }
 
-#email-error,
-#name-error,
-#surname-error,
-#password-error {
-  display: none;
-}
-
 input {
   line-height: 2.6rem;
   letter-spacing: 0.25px;
   color: #3e3c49;
   width: 100%;
-  border: 1px solid #DEDEDE;
+  border: none;
+  -webkit-transition: outline 0.08s;
+  transition: outline 0.08s;
+  outline: 1px solid #DEDEDE;
   border-radius: 5px;
-  margin-bottom: 1.5rem;
   padding: 1.5rem 0 1.5rem 1.9rem;
   font-size: 1.4rem;
   font-weight: 600;
@@ -300,6 +317,8 @@ input:focus {
 }
 
 .input-error-outline {
+  -webkit-transition: outline 0.08s;
+  transition: outline 0.08s;
   outline: 2px solid #FF7979;
 }
 
