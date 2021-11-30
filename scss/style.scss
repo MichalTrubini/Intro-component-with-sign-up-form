@@ -104,7 +104,7 @@ body {
         line-height: 0;
         font-style: italic;
         font-weight: 500;
-        transition: height 5s;
+        transition: height 0.5s;
         height: 0;
         overflow: hidden;
     }
@@ -151,9 +151,10 @@ input:focus {
     transition: .1s;
 }
 
-.input-error-outline {
+.input-error {
     transition: outline 0.08s;
     outline: 2px solid #FF7979;
+    color: #FF7979;
 }
 
 ::placeholder {
@@ -212,10 +213,10 @@ input:focus {
         &__form {
             padding: 4rem;
         }
-    }
 
-    input {
-        margin-bottom: 2rem;
+        &__item {
+            margin-bottom: 2rem;
+        }
     }
 
     button:hover {
