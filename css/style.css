@@ -388,6 +388,7 @@ input:focus {
   }
   .introduction {
     width: 52.5rem;
+    margin-bottom: 0;
   }
   .contact {
     width: 54rem;
